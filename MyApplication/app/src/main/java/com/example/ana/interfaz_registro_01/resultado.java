@@ -26,12 +26,12 @@ public class resultado extends ActionBarActivity {
         int Weight = i.getIntExtra(Interfaz_registro_01.PESO1, 50);
         String Born = i.getStringExtra(Interfaz_registro_01.FECHA1);
 
+        setContentView(R.layout.activity_resultado);
+
         TextView datos= (TextView) findViewById(R.id.resultadillo);
 
         datos.setTextSize(40.0f);
         datos.setText(Name + "\n" + Surname + "\n" + Sex + "\n" + Job + "\n" + Study + "\n" + Uni + "\n" + Weight + "\n" + Born);
-
-        setContentView(R.layout.activity_resultado);
     }
 
 

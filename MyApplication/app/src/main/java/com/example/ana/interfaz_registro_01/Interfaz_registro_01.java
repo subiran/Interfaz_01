@@ -53,6 +53,10 @@ public class Interfaz_registro_01 extends ActionBarActivity {
             return true;
         }
 
+        if (id == R.id.cambio){
+            enviar(findViewById(id));
+        }
+
         return super.onOptionsItemSelected(item);
     }
  public void enviar(View variable){
